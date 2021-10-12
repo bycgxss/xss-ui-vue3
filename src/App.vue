@@ -1,15 +1,14 @@
 <template>
-  <div>hi</div>
-  <Xss />
+  <div>
+    导航栏 |
+    <router-link to="/">Xss</router-link> |
+    <router-link to="/xxx">Xss2</router-link>
+  </div>
+  <router-view />
 </template>
 
 <script>
-import Xss from "./components/Xss.vue";
-
 export default {
   name: "App",
-  components: {
-    Xss,
-  },
 };
 </script>
