@@ -1,17 +1,16 @@
 <template>
   <div>
-    <div class="topnav">
-      <div class="logo"></div>
-      <div class="menu"></div>
-    </div>
+    <TopNav />
     <div class="content">
       <aside>边栏</aside>
       <main>主内容</main>
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
+import TopNav from "../components/TopNav.vue";
 export default {
   name: "Doc",
+  components: { TopNav },
 };
 </script>
